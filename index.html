@@ -1,8 +1,17 @@
 <!DOCTYPE html>
+var $myIn = 
+$("#date").flatpickr({
+    
+    "enable": [
+        
+    ]
+});
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/flatpickr/4.2.3/flatpickr.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/flatpickr/4.2.3/themes/dark.css"><meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./style.css">
     <title>Dermatology clinic</title>
 </head>
@@ -47,7 +56,7 @@
               
         </section>
         <section id="services" class="services">
-            <div>
+            <div class="content">
                 <h1>Our Services</h1>
                 
                     
@@ -73,17 +82,20 @@
                             <input type="email" id="email" name="email" required>
                             <label for="clinic">Preferred Clinic:</label>
                             <select id="clinic" name="clinic">
-                                <option value="andheri">Andheri</option>
-                                <option value="malad">Malad</option>
-                                <option value="kharghar">Kharghar</option>
+                                <option value="Andheri">Andheri</option>
+                                <option value="Malad">Malad</option>
+                                <option value="Kharghar">Kharghar</option>
                             </select>
                         </div>
                         
                         <div class="form-right">
                             <label for="phone">Phone Number</label>
-                            <input type="tel" id="phone" name="phone" placeholder="Your phone number..">
+                            <input type="tel" id="phone" name="phone" pattern="/(7|8|9)\d{9}/" placeholder="Your phone number..">
                             <label for="date">Date</label>
-                            <input type="date" id="date" min="2023-12-17" max="2023-12-27"/>
+                            <input type="date" id="date" />
+                            <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+                            <!--  Flatpickr  -->
+                            <script src="https://cdnjs.cloudflare.com/ajax/libs/flatpickr/4.2.3/flatpickr.js"></script>
                             <!-- <select id="date" name="date">
                             <option value="2023-03-09">9 October 2023</option>
                             <option value="2023-03-09">10 October 2023</option>
@@ -134,5 +146,6 @@
     </section>
     
     <script src="script.js"></script>
+    
 </body>
 </html>
