@@ -67,8 +67,8 @@
                 <form id="appointment-form">
                     <div class="formfields">
                         <div class="form-left">
-                            <label for="name">Name:</label>
-                            <input type="text" id="name" name="name" required>
+                            <label for="patientname">Name:</label>
+                            <input type="text" id="patientname" name="patientname" required>
                             <label for="email">Email Address</label>
                             <input type="email" id="email" name="email" required>
                             <label for="clinic">Preferred Clinic:</label>
@@ -83,7 +83,8 @@
                             <label for="phone">Phone Number</label>
                             <input type="tel" id="phone" name="phone" placeholder="Your phone number..">
                             <label for="date">Date</label>
-                            <select id="date" name="date">
+                            <input type="date" id="date" min="2023-12-17" max="2023-12-27"/>
+                            <!-- <select id="date" name="date">
                             <option value="2023-03-09">9 October 2023</option>
                             <option value="2023-03-09">10 October 2023</option>
                             <option value="2023-03-09">11 October 2023</option>
@@ -92,26 +93,21 @@
                             <option value="2023-03-09">14 October 2023</option>
                             <option value="2023-03-09">15 October 2023</option>
                             <option value="2023-03-09">16 October 2023</option>
-                            </select>
+                            </select> -->
                             <label for="Time">Time</label>
                             <select id="time" name="time">
-                                <option value="2023-03-09">9 am </option>
-                                <option value="2023-03-09">9:30 am</option>
-                                <option value="2023-03-09">10 am</option>
-                                <option value="2023-03-09">10:30 am</option>
-                                <option value="2023-03-09">11 am</option>
-                                <option value="2023-03-09">11:30 am</option>
-                                <option value="2023-03-09">12 pm </option>
-                                <option value="2023-03-09">12:30 pm</option>
-                                <option value="2023-03-09">2 pm </option>
-                                <option value="2023-03-09">2:30 pm</option>
-                                <option value="2023-03-09">3 pm</option>
-                                <option value="2023-03-09">3:30 pm</option>
-                                <option value="2023-03-09">4 pm</option>
-                                <option value="2023-03-09">4:30 pm</option>
-                                <option value="2023-03-09">5 pm</option>
-                                <option value="2023-03-09">5:30 pm</option>
-                                <option value="2023-03-09">6 pm </option>
+                                <option value="9">9 am </option>
+                                <option value="9:30">9:30 am</option>
+                                <option value="10">10 am</option>
+                                <option value="10:30">10:30 am</option>
+                                <option value="11">11 am</option>
+                                <option value="11:30">11:30 am</option>
+                                <option value="12">12 pm </option>
+                                <option value="12:30">12:30 pm</option>
+                                <option value="2">2 pm </option>
+                                <option value="2:30">2:30 pm</option>
+                                <option value="3">3 pm</option>
+                                <option value="3:30">3:30 pm</option>
                             </select>
                         </div>
                     </div>
@@ -131,9 +127,9 @@
             <p style="color: white;">Contact us: <a href="mailto:info@dermatologycompany.com">info@dermatologycompany.com</a></p>
             <p style="color: white;">Follow us on social media</p>
             <p style="color: white;">
-                <a href="https://www.facebook.com/dermatologycompany"><img src="facebook.png" alt="Facebook" width="32" height="32"></a>
-                <a href="https://www.twitter.com/dermatologycompany"><img src="twitter.png" alt="Twitter" width="32" height="32"></a>
-                <a href="https://www.instagram.com/dermatologycompany"><img src="instagram.png" alt="Instagram" width="32" height="32"></a>
+                <a style="margin: 8px" href="https://www.facebook.com/dermatologycompany"><img src="./images/facebook.png" alt="Facebook" width="32" height="32"></a>
+                <a style="margin: 8px" href="https://www.twitter.com/dermatologycompany"><img src="./images/twitter.png" alt="Twitter" width="32" height="32"></a>
+                <a style="margin: 8px" href="https://www.instagram.com/dermatologycompany"><img src="./images/instagram.png" alt="Instagram" width="32" height="32"></a>
             </p>
     </section>
     
