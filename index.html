@@ -1,11 +1,5 @@
 <!DOCTYPE html>
-var $myIn = 
-$("#date").flatpickr({
-    
-    "enable": [
-        
-    ]
-});
+
 <html lang="en">
 <head>
     <meta charset="UTF-8">
@@ -81,7 +75,7 @@ $("#date").flatpickr({
                             <label for="email">Email Address</label>
                             <input type="email" id="email" name="email" required>
                             <label for="clinic">Preferred Clinic:</label>
-                            <select id="clinic" name="clinic">
+                            <select id="clinic" name="clinic" required>
                                 <option value="Andheri">Andheri</option>
                                 <option value="Malad">Malad</option>
                                 <option value="Kharghar">Kharghar</option>
@@ -90,9 +84,9 @@ $("#date").flatpickr({
                         
                         <div class="form-right">
                             <label for="phone">Phone Number</label>
-                            <input type="tel" id="phone" name="phone" pattern="/(7|8|9)\d{9}/" placeholder="Your phone number..">
+                            <input type="tel" id="phone" name="phone" pattern="[0-9]{10}" placeholder="Your phone number..">
                             <label for="date">Date</label>
-                            <input type="date" id="date" />
+                            <input type="date" id="date"  required/>
                             <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
                             <!--  Flatpickr  -->
                             <script src="https://cdnjs.cloudflare.com/ajax/libs/flatpickr/4.2.3/flatpickr.js"></script>
@@ -107,19 +101,8 @@ $("#date").flatpickr({
                             <option value="2023-03-09">16 October 2023</option>
                             </select> -->
                             <label for="Time">Time</label>
-                            <select id="time" name="time">
-                                <option value="9">9 am </option>
-                                <option value="9:30">9:30 am</option>
-                                <option value="10">10 am</option>
-                                <option value="10:30">10:30 am</option>
-                                <option value="11">11 am</option>
-                                <option value="11:30">11:30 am</option>
-                                <option value="12">12 pm </option>
-                                <option value="12:30">12:30 pm</option>
-                                <option value="2">2 pm </option>
-                                <option value="2:30">2:30 pm</option>
-                                <option value="3">3 pm</option>
-                                <option value="3:30">3:30 pm</option>
+                            <select id="time" name="time" disabled required>
+                               
                             </select>
                         </div>
                     </div>

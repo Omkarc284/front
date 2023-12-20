@@ -1,5 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=League+Spartan:wght@900&display=swap');
-html, body {
+body {
     font-family: Arial, sans-serif;
     width: 100vw;
     height: 100vh;
@@ -7,9 +7,27 @@ html, body {
     scroll-behavior: smooth;
     overflow-x: hidden;
 }
+::-webkit-scrollbar {
+    width: 10px;
+  }
+  
+  /* Track */
+  ::-webkit-scrollbar-track {
+    background: #f8f8f8;
+  }
+  
+  /* Handle */
+  ::-webkit-scrollbar-thumb {
+    background: #888;
+  }
+  
+  /* Handle on hover */
+  ::-webkit-scrollbar-thumb:hover {
+    cursor: grab;
+    background: #555;
+  }
 #main {
     position: relative;
-    overflow: hidden;
 }
 a, li {
     cursor: pointer;
